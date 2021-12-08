@@ -26,15 +26,47 @@ class FalciSayfasi extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Container(width: 200,height: 200,child: Image.asset("assets/falci.png")),
-          Card(
+          Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: Container(
+                width: 200,
+                height: 200,
+                child: Image.asset("assets/falci.png")),
+          ),
+          const SizedBox(
+            height: 20,
+            width: 200,
+          ),
+          const Card(
             margin: EdgeInsets.symmetric(horizontal: 45.0),
             color: Colors.white70,
             child: ListTile(
               leading: Icon(Icons.favorite_outline_outlined, color: Colors.red),
               title: Text("AŞK DURUMU",
-                  style: TextStyle(fontSize: 20, color: Colors.red)),
+                  style: TextStyle(fontSize: 10, color: Colors.red)),
+            ),
+          ),
+          SizedBox(
+            width: 200,
+          ),
+          const Card(
+            margin: EdgeInsets.symmetric(horizontal: 45.0),
+            color: Colors.white70,
+            child: ListTile(
+              leading: Icon(Icons.shopping_cart, color: Colors.green),
+              title: Text("PARA DURUMU",
+                  style: TextStyle(fontSize: 10, color: Colors.red)),
+            ),
+          ),
+          const Card(
+            margin: EdgeInsets.symmetric(horizontal: 45.0),
+            color: Colors.white70,
+            child: ListTile(
+              leading: Icon(Icons.record_voice_over, color: Colors.red),
+              title: Text("GUNLUK TAVSİYE",
+                  style: TextStyle(fontSize: 10, color: Colors.red)),
             ),
           )
         ],
