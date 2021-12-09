@@ -213,7 +213,7 @@ class _FalciSayfasiState extends State<FalciSayfasi> {
                 child: Text(
                   yanitlar[cevap],
                   style: TextStyle(
-                    fontSize: 12,
+                    fontSize: 18,
                   ),
                 ),
               ),
